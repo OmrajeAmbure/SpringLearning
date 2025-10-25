@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    dependent dean config-->
+    <bean id="delhivery" class="org.example.dependant.Delhivery"></bean>
+    <bean id="dtdc" class="org.example.dependant.DTDC"></bean>
+    <!--    target dean configuration  -->
+    <bean id="fkart" class="org.example.target.Flipkart" autowire="byName"></bean>
+</beans>
